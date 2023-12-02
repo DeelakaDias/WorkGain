@@ -1,0 +1,134 @@
+/*Student 4 Rushdi*/
+.x {
+    width: 80%;
+    margin-left:150px ;
+    background-color: #00000000;
+    color: #ffffff;
+    align-items: center;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 450%;
+}
+.topcontainer{
+
+    color: #000000;
+    font-size: larger;
+    font-weight: 1000;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    background-image: url(../img/back.jpg);
+    
+
+}
+.container{
+    color: #000;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+
+}
+
+.container .images .image-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.container .images{
+    width: 100%;
+}
+.images{
+    margin: auto;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images .image-box{
+    margin: 8px;
+}
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+.image-box:hover img{
+    transform: scale(1.05);
+}
+
+.head2{
+    
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 6px;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+}
+.head2:hover{
+    background-color: #d4e725;
+    color: #000;
+}
+.container h3{
+    color: #000000;
+    border:#d4e725;
+    border-width:5px;
+    border-style:solid;
+    border-radius: 6px;
+}
+
+.topcontainer .head1{
+    color: #000000;
+
+    border-radius: 6px;
+
+}
+
+.link{
+    background-color: #000000a1;
+    border-radius: 24px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.link:hover{
+    background-image: linear-gradient( #d4e725,#e4e725);
+    color: #000000;
+}
+.student{
+    font-size:small;
+    border-color:2px solid #000000;
+    background-color: #e4e725;
+    color: #000000;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+}
+  

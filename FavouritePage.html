@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<!--Student-4 Rushdi-->
+<head>
+	<title>Favourite Page</title>
+	<link rel = "icon" href = "Sitelogotitle1.jpg" type = "x-icon">
+	<link rel="stylesheet" href="FavouritePage.css">
+	<link rel="stylesheet" href="SiteStyle.css">
+</head>
+<body>
+	<header>
+        <!--Navigation Bar-->
+        <div class="naviSection"> <!-- <div> defines a division or a section-->
+            <div class="naviBar"> <!--'class' is used to point to a class name in a style sheet-->
+                <img src="SiteLogo.png" alt="logo" height="55"> <!-- images taken from : https://www.wallpaperflare.com/search?wallpaper=men+fitness-->
+                <div class="navi">
+
+                    <a href="HomePage.html">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="ProductsPage.html">Store</a>
+                    <a href="QuizPage.html">Quiz</a>
+                    <a href="NewsLetterSignup.html">NewsLetter</a>
+                    <a href="GalleryPage.html">Gallery</a>
+                    <a href="MyListPage.html">My List </a>
+                    <a class="active" href="FavouritePage.html">Favourite Page </a>
+					
+                </div>
+            </div>
+        </div>
+    </header>
+	<br><br><br><br>
+	<h1>FAVOURITE PAGE</h1>
+	<br>
+	<div class="topcontainer">
+		<label for="bg-select">Select a background Image</label>
+		<br>
+		<div onclick="changeBackground()">
+			<br>
+			<button id="btn-1" class="button-81" role="button">1</button>
+			<button id="btn-2" class="button-81" role="button">2</button>
+			<button id="btn-3" class="button-81" role="button">3</button>
+			<button id="btn-4" class="button-81" role="button">4</button>
+			<br>
+		</div>
+		<br>
+
+	<label for="text-select">Select a text color:</label>
+	<select id="text-select" onchange="changeColors()" class="dropdown" >
+		<option value="#ffffff">WHITE</option>
+		<option value="#000000">BLACK</option>
+		<option value="#E7FF00">YELLOW</option>
+		<option value="#00ff00">GREEN</option>
+		<option value="#0000ff">BLUE</option>
+		<option value="#ff0000">RED</option>
+		<option value="#9900cc">PURPLE</option>
+	</select>
+	</div>
+	<br>
+	<div class="container">
+		<div class="head2"><h2>Favourite Images</h2></div>
+		<div class="images">
+            <div class="image-box">
+				<img src="FavouriteImage-1.jpg" alt="">
+            </div>
+            <div class="image-box">
+				<img src="FavouriteImage-2.jpg" alt="">
+            </div>
+            <div class="image-box">
+				<img src="FavouriteImage-3.jpeg" alt="">
+            </div>
+            <div class="image-box">
+				<img src="FavouriteImage-4.jpeg" alt="">
+            </div>
+            <div class="image-box">
+				<img src="FavouriteImage-5.jpg" alt="">
+            </div>
+            <div class="image-box">
+				<img src="FavouriteImage-6.jpg" alt="">
+            </div>
+	</div>
+	<div class="containerbottom">
+		<div class="head2"><h2>FAVOURITE ARTICLE</h2></div>
+		<br>
+		<br>
+
+		<div>
+			<h3>DO MORE ON YOUR OWN TIME</h3>
+			<br>
+			<p>
+				The key to staying healthy is to rethink what exercise means to you.
+				Instead of thinking of it only as a designated workout video, cardio,
+				or weight lifting, aim for living less sedentary overall.
+				You don't need to put on sneakers, set aside 60 minutes,
+				and get ready for an intense workout if you don't want to. 
+				Instead, think about how you spend your downtime and how you can make
+				that downtime more active. If you spend free time watching Netflix 24/7,
+				consider turning off the TV and spend the extra time in ways that are not
+				only better for your body, but more fulfilling for you. For example,
+				take your dog on longer walks, put on some music while cooking and dance around,
+				or tidy up your home. All of these activities require movement, but more importantly
+				are productive and/or enjoyable.
+			</p>
+			<br>
+			<h3>Use everyday objects as weights</h3>
+			<br>
+			<p>
+				If you were a regular gym-goer pre-pandemic, you don't need to invest in an at-home full
+				set of weights if you don't want to. Instead, get creative using objects you have laying
+				around your home as a way to challenge the body with a little more weight than using body 
+				weight. For example, try bridge lifts with a heavy coffee table book, soup cans for bicep 
+				curls, and a bottle of wine (or a bottle of vodka for more weight, naturally) for goblet 
+				squats. You'll get the same challenge that comes with weight training without actually 
+				needing weights. Just try your best to resist the temptation to forget the goblet squats 
+				and open the bottle of wine (or vodka. No judgment).
+			</p>
+			<br><br><br>
+			<div class="source">
+			<a href ="https://theeverygirl.com/home-fitness-hacks/">&copy Go To Source</a>
+			</div>
+		</div>
+		<div class="topPage" id="up"> <!--'id' is to a specific style declaration in a style sheet-->
+			<a href="#top">&and;</a> <!--characters displayed in HTML-->
+		</div>
+
+		<br> <!--The <br> tag defines a line break-->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	</div>
+	<br><br><br><br>
+	<footer class="footer">
+        <div class="footer1">
+            Copyright & copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="footer2">
+            Developed by <a href="Student4EditorPage.html"> M.M.Rushdi </a>
+        </div>
+    </footer>
+	<script src="FavouritePage.js"></script>
+  <div class="footer1">
+        Copyright &copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+    </div>
+</body>
+</html>

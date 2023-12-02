@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>
+            Checkout
+     </title>
+      <!-- adding icon to title -->
+    <link rel = "icon" href = "Sitelogotitle1.jpg" type = "image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="SiteStyle.css">
+    <link rel="stylesheet" href="checkoutstyle.css">
+    <!--java file link-->
+    <script src="products.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="success-modal" id="success">
+            <div>
+                <div class="check-mark-icon">
+                    <p class="check-mark"><i class="fa fa-check" aria-hidden="true"></i></p>
+                </div>
+
+                <h2>Your Payment Was Successfully!</h2>
+            </div>
+
+
+
+        </div>
+
+        <form action="" id="checkout-form">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Nimal Perera">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="perera@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="H no - street">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="Colombo">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="checkoutimage/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="mr. nimal perera">
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="september">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2024">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- loader -->
+                <div id="loaderScreen">
+                    <div id="load" class="loader"></div>
+                </div>
+            </div>
+
+            <div class="submit-btn"><a onclick="payment()">proceed to checkout</a></div>
+
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer1">
+            Copyright &copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="footer2">
+            Developed by <a href="Student3EditorPage.html">Deelaka Dias</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
