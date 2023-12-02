@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <!--Student-4 Rushdi-->
+    <head>
+        <title>NewsLetter</title>
+        <link rel = "icon" href = "Sitelogotitle1.jpg" type = "x-icon">
+        <link rel="stylesheet" href="NewsLetterSignup.css">
+        <link rel="stylesheet" href="SiteStyle.css">
+
+    </head>
+    <body>
+        <header>
+            
+            <!--Navigation Bar-->
+            <div class="naviSection"> <!-- <div> defines a division or a section-->
+                <div class="naviBar"> <!--'class' is used to point to a class name in a style sheet-->
+                    <img src="SiteLogo.png" alt="logo" height="55"> <!-- images taken from : https://www.wallpaperflare.com/search?wallpaper=men+fitness-->
+                    <div class="navi">
+    
+                        <a href="HomePage.html">Home</a>
+						<a href="AboutUs.html">About Us</a>
+						<a href="ProductsPage.html">Store</a>
+						<a href="QuizPage.html">Quiz</a>
+						<a class="active" href="NewsLetterSignup.html">NewsLetter</a>
+						<a href="GalleryPage.html">Gallery</a>
+						<a href="MyListPage.html">My List </a>
+						<a href="FavouritePage.html">Favourite Page </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="x">
+            <div class="container">
+                <h1>Subscribe to our Newsletter</h1>
+                <form action="#" onsubmit=validateForm()>
+                    <div class = "form+">
+                        <div class = "details personal">
+    
+    
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>First Name </label>
+                                    <input type = "text" id= "fname-input" placeholder="Enter your First name (Required)" > 
+                                </div>
+    
+                                <div class="input-field">
+                                    <label>Last Name</label>
+                                    <input type = "text" id= "lname-input"placeholder="Enter your Lasr name (Required)" > 
+                                </div>
+    
+                                <div class="input-field">
+                                    <label>Date of Birth</label>
+                                    <input type = "date" placeholder="Enter your birthdate" > 
+                                </div>
+    
+                                <div class="input-field">
+                                    <label>Email</label>
+                                    <input type = "email" id= "email-input" placeholder="Enter your Email (Required)" > 
+                                </div>
+    
+                                <div class="input-field">
+                                    <label>Mobile Number</label>
+                                    <input type = "number" placeholder="Enter your Mobile Number" > 
+                                </div>
+    
+                                <div class="input-field">
+                                    <label>Gender</label>
+                                    <select required>
+                                        <option disabled selected>Select Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select> 
+                                </div>
+    
+                            </div>
+    
+                            <button>
+                                <span class = "btnText">Subscribe</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+    
+                        </div>
+                    </div>                
+                </form>
+            </div>
+            <div class="topPage" id="up"> <!--'id' is to a specific style declaration in a style sheet-->
+                <a href="#top">&and;</a> <!--characters displayed in HTML-->
+            </div>
+
+            <br> <!--The <br> tag defines a line break-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <footer class="footer">
+            <div class="footer1">
+                Copyright &copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+            </div>
+            <div class="footer2">
+                Developed by <a href="Student4EditorPage.html"> M.M.Rushdi </a>
+            </div>
+        </footer>
+        <script src="NewsLetterSignup.js"></script>
+    </body>
+</html>

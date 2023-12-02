@@ -1,0 +1,103 @@
+/*Student 2 Lafri*/
+
+body {
+    background-color:#c2c6c2;
+    align-items: center;
+    font-family: Verdana;
+}
+.form1{
+    position:absolute;
+	background: #E1E1E1;
+	padding:10px;
+    border-radius:20px; /*To Create curved border*/
+	top:10%;
+	left:20%;
+	height:80%;
+	width:30%;
+    margin-top: 10px;
+    font-family: Verdana;
+
+}
+
+label{
+    float:left;
+    width:30%;
+}
+
+
+
+.form1 .input3.custRating {
+    width:100%;
+    height:35px;
+    border-radius:10px; /*To Create curved border*/
+}
+
+.form1  .input1  input[type="text"]{
+    width:98%;
+    border:2px solid #e0e0e0;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.form1  .input2  input[type="email"]{
+    width:98%;
+    border:2px solid #e0e0e0;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.form1  .input3  select{width:98%;
+    border:2px solid #e0e0e0;
+    padding: 10px;
+    resize:none;
+    border-radius:10px;
+}
+
+.form1  .input4  textarea{width:98%;
+    border:2px solid #e0e0e0;
+    padding: 10px;
+    height:100px;
+    resize:none;
+    border-radius:10px;
+}
+
+.FeedbackButton input[type="submit"]{width:20%;
+    background:#010000;
+    color:#ffffff;
+    border:10px;
+    cursor:pointer;
+    font-size:10px;
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+}	  
+
+
+
+.FeedbackButton input[type="submit"]:hover{                           
+    background:#dee123;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}		
+
+.FeedbackButton input[type="reset"]{width:20%;
+    background:#010000;
+    color:#ffffff;
+    border:10px;
+    cursor:pointer;
+    font-size:10px;
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+}	  
+        
+        
+        
+.FeedbackButton input[type="reset"]:hover{                           
+    background:#E73725;
+    border:1px solid  #000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}		            

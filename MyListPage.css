@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body{
+    min-height: 100vh;
+    align-items: center;
+    background: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image:url("MyListWallpaper.jpg");
+}
+
+.x{
+    min-height: 100vh;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 450%;
+    color: #fff;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #e2f440;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #000000;
+    background-image: linear-gradient( #d4e725,#e4e725);
+    color: #000000;
+}
+
+.styled-table {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.styled-table th,
+.styled-table td {
+    border-radius: 6px;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.leaderboard{
+    text-align: center;
+}
+
+.styled-table .hi{
+    background-color: #c7c6c6;
+}

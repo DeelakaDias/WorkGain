@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; 
+   border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: #ffffff;
+}
+
+.back-video{
+   position:fixed;
+   right:0;
+   bottom:0;
+   z-index: -1;
+   min-width: 100%;
+   min-height: 100%;
+}
+/* website logo */
+.logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 18px;
+}
+
+.logo .image{
+   display: block;
+   margin-left: 12rem;
+   width: 95%;
+ }
+
+.cart-btn{
+   position: relative;
+   color: rgb(255, 255, 255);
+   font-size: 30px;
+   padding: 0;
+   margin: 20px;
+   margin-top: 20px;
+   margin-left: 121rem;  
+}
+
+/* add to cart button color */
+.cart-btn :hover{
+   cursor: pointer;
+   color: #ff0000;
+}
+
+
+
+/* cart display */
+.cartAmount{
+   position: absolute;
+   top:-10px;
+   right:-12px;
+   font-size: 15px;
+   text-align: center;
+   padding-top: 2px;
+   align-items: center;
+   background-color: #212529;
+   color: white;
+   width: 24px;
+   height: 24px;
+   border-radius:40px;
+}
+
+
+
+/* centering navigation bar */
+.navigation{
+   text-align: center;
+}
+
+/* adjusting width margin and padding of overall images within thier borders */
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+/* adjusting products in a grid */
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:2rem;  /*gat between items is 2rem*/
+   opacity: 100%;
+}
+
+/* Adding to each product  seperated box*/
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   outline: .1rem solid #ffffff;
+   outline-offset: -1.5rem;
+   cursor: pointer;  /* when hovering over products cursor becomes a pointer*/
+   border-radius: 20px;
+   opacity: 87%;
+   height: 38rem;
+}
+
+/* when hovering over products outline appears */
+.container .products-container .product:hover{
+   outline: .5rem solid #ffff00;
+   outline-offset: 0;
+}
+
+/* adjusting images withing the product border */
+.container .products-container .product img{
+   height: 25rem;
+}
+
+
+/* when hoveing image size lowers */
+.container .products-container .product:hover img{
+   transform: scale(1.1);
+}
+
+/* changing product name size, color */
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#000000;
+}
+
+/* changing product price size, color */
+.container .products-container .product .price{
+   font-size: 2rem;
+   color:#000000;
+}
+
+/* product description popup details adjusting */
+.products-preview{ 
+position: fixed;
+top:0; left:0;
+min-height: 100vh;
+width: 100%;
+background: rgba(0, 0, 0, 0.8);
+display: none;
+align-items: center;
+justify-content: center;
+}
+
+/* product description inner window details adjusting */
+.products-preview .preview{
+   display: none;
+   padding:1.2rem;
+   text-align: center;
+   background: #ffffff;  /* inner window background color */
+   position: relative;
+   margin:2rem; /* inner window margin */
+   border-radius: 20px;
+   height: 52rem;
+   width:40rem  /* inner window width */
+   
+   
+}
+
+/* description popup veiw activating */
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+/* description veiw close button designings */
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; 
+   right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+
+/* when over close button it rotates 45degrees */
+.products-preview .preview .fa-times:hover{
+   transform: rotate(45deg);
+}
+
+/* description popup view product name changes */
+.products-preview .preview h3{
+   color:#000000;
+   padding:5rem 0;
+   font-size: 2.5rem;
+}
+
+/* description popup view stars padding */
+.products-preview .preview .stars{
+   padding:1rem;
+}
+
+/* description popup view stars color */
+.products-preview .preview .stars i{
+   font-size:1.7rem;
+   color:#cf0000;
+}
+
+/* description popup view span color */
+.products-preview .preview .stars span{
+   color:#999999;
+}
+
+/* description popup view paragraph */
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+/* description popup view product price */
+.products-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#161b18;
+}
+
+/* description popup view add to cart button */
+.products-preview .preview .cart{
+   margin: auto;
+   display: flex;
+   padding: 1rem;
+   font-size: 1.6rem;
+   width: 36rem; /* width of the cart box */
+   height: 4rem;
+   color:#000000;
+   background: #eeff02;  /* box color */
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+/* placing font increasing and decreasing button horizontally */
+.products-preview .preview .all{
+   display: flex;
+   gap: 24rem;
+}
+
+.products-preview .preview button{
+   background-color: #000000;
+   color: #f5deb3;
+   font-size: 1.3444rem;
+}
+
+/* font size changing button increasing */
+.products-preview .preview .fontButton1{
+   align-items: center;
+   display: flex;
+   padding:1rem;
+   width: 6rem; /* width of the cart box */
+   height: .9rem;
+   background: #000000;  /* box color */
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+/* font size changing button decreasing */
+.products-preview .preview .fontButton2{
+   align-items: center;
+   display: flex;
+   padding:1rem;
+   width: 6rem; /* width of the cart box */
+   height: .9rem;
+   background: #000000;  /* box color */
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+/* popup view add to cart text centering */
+.products-preview .preview .cart a{
+   flex:1rem;
+}
+
+
+/* When hovering cart button color changes to black */
+.products-preview .preview .cart:hover{
+   background: #111;
+   color: #ffffff;
+}
+
+.products-preview .preview .cart:active{
+   background: #0162d1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  opacity: 90%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+   position: relative;
+   padding: 2rem;
+   width:100%; /* Could be more or less, depending on screen size */
+   border: none;
+}
+
+.cart_content{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+#cart-details-table-header{
+width: 100%;
+}
+
+.cart-details-table-details{
+      font-size: 14px;
+      font-weight: 400;
+}
+
+/* Modal content close button */
+.modal-content .fa-times{
+   position: absolute;
+   top:2rem; 
+   right: 3rem;
+   cursor: pointer;
+   font-size: 4rem;
+   color: #000000;
+}
+
+/* Model content cloes button hovering */
+.modal-content .fa-times:hover{
+   transform: rotate(45deg);
+}
+
+
+.header-cart{
+   width: 100%;
+   font-size: 15px;
+   font-weight: 500;
+   padding: 10px;
+   gap:12rem;
+}
+.detail-cart {
+   font-size: 15px;
+   font-weight: 500;
+   padding: 10px;
+}
+
+
+#product_name_header {
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 500;
+  
+
+}
+
+#product_price_header {
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 500;
+    
+
+}
+
+#product_qty_header {
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+#price_amount_header {
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+#net_total {
+   padding: 5px;
+   font-size: 20px;
+   font-weight: 500;
+
+}
+#net_total_header {
+   padding: 5px;
+   font-size: 20px;
+   font-weight: 500;
+   text-align: right;
+
+}
+#remove{
+   padding: 5px;
+ 
+}
+
+/* click to checkout button */
+.modal .modal-content .proceed-btn{
+   margin-top: 30px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+/* removeing underline from link */
+a:link {
+   text-decoration: none;
+ }
+
+/* click to check out button text color*/
+
+.modal .modal-content .proceed-btn a{
+   cursor: pointer;
+   font-size: 1.9rem;
+   color:#000000;
+   text-align: center;
+   padding: 10px;
+   background: #eeff02;
+   margin-top: 5px;
+   border-radius: 10px;
+}
+
+
+/* click to check out button animation */
+.modal .modal-content .proceed-btn a:hover{
+   background: #111;
+   color: #ffffff;
+}
+
+/* click to go to products button animation */
+.modal .modal-content .proceed-btn #proceed-btn-disabled a:hover{
+   background: #111;
+}
+
+.modal .modal-content .proceed-btn #proceed-btn-Notdisabled a:hover {
+  cursor: not-allowed;
+}
+
+.net_total_table{
+   display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.view-cart-title{
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.remove-btn{
+  
+   font-size: 15px;
+   width: 25px;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #cf0000;
+   color: #000000;
+   cursor: pointer;
+   border-radius: 4px;
+}
+.remove-btn:hover{
+   background-color: #c55858;
+}
+tr{
+   display:flex;
+   align-items: center;
+}
+
+/*Loading Screen*/
+#loaderScreen {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 20%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loader {
+
+   border: 8px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 8px solid #93cef5;
+   width: 60px;
+   height: 60px;
+   -webkit-animation: spin 2s linear infinite;
+   /* Safari */
+   animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {c
+      transform: rotate(360deg);
+   }
+}
+
+/* adjusting font size of air-bike and thick yoga mat separately */
+
+#text12{
+   font-size: 1.5rem;
+}
+
+#text14{
+   font-size: 1.5rem;
+}

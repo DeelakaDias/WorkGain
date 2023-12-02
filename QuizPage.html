@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <!--Student-2 Lafri-->
+    <head>
+        <title>Quiz</title>
+        <link rel = "icon" href = "Sitelogotitle1.jpg" type = "x-icon">
+        <link rel="stylesheet" href="SiteStyle.css"><!--When the file is present in up folder use '..' to the path-->
+        <link rel="stylesheet" href="QuizStyle.css">
+        <!--Reference: https://www.youtube.com/watch?v=_FxJbZS_uFk-->
+        <style>
+            body {
+              background-image: url('QuizBackground1.jpg');
+            }
+        </style>
+
+    </head>
+<!--===================================================================================================================================================================================================================================================================-->
+    
+    <body><!--Visible part of the HTML-->
+        
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <header>
+            
+            <!--Navigation Bar-->
+            <div class="naviSection"> <!-- <div> defines a division or a section-->
+                <div class="naviBar"> <!--'class' is used to point to a class name in a style sheet-->
+                    <img src="SiteLogo.png" alt="logo" height="55"> <!-- images taken from : https://www.wallpaperflare.com/search?wallpaper=men+fitness-->
+                    <div class="navi">
+
+                        <a href="HomePage.html">Home</a>
+						<a href="AboutUs.html">About Us</a>
+						<a href="ProductsPage.html">Store</a>
+						<a class="active" href="QuizPage.html">Quiz</a>
+						<a href="NewsLetterSignup.html">NewsLetter</a>
+						<a href="GalleryPage.html">Gallery</a>
+						<a href="MyListPage.html">My List </a>
+						<a href="FavouritePage.html">Favourite Page </a>
+					
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="x">        
+        <div class="rulesButton">
+            <!--Start button for Quiz-->
+            <button>Quiz Rules</button>
+            <a href="QuizQuestionsPage.html" onClick="startTimer;">Start Quiz</a>
+
+        </div>
+
+        <div class="infobox">
+            <div class="infotitle">
+                <span>Quiz Rules</span>  <!--The <span> tag is easily styled by CSS  -->
+            </div>
+
+            <div class="infolist">
+                <div class="info">1. You will have only <span>60 seconds</span> per each question. </div>
+                <div class="info">2. You have to wait until the time Ends.</div>
+                <div class="info">3. You can't select answer after time ends.</div>
+                <div class="info">4. You can exit only after the time Ends. </div>
+                <div class="info">5. Each question carries <span>2 marks</span> and <span>-1 mark</span> for each wrong answer </div>
+            </div>
+
+            <div class="buttons">
+                <button class="exit">Back to Quiz</button>
+            </div>
+        </div>
+</div>
+        <script src="Quiz.js"></script>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="topPage" id="up"> <!--'id' is to a specific style declaration in a style sheet-->
+            <a href="#top">&and;</a> <!--characters displayed in HTML-->
+        </div>
+
+        <br> <!--The <br> tag defines a line break-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <footer class="footer">
+            <div class="footer1">
+                Copyright &copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+            </div>
+            <div class="footer2">
+                Developed by <a href="Student2EditorPage.html">Lafri Suhood</a>
+            </div>
+        </footer>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    </body>
+
+</html>

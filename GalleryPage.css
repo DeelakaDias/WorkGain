@@ -1,0 +1,129 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:linear-gradient(120deg,#000000,#8b9b00);
+}
+h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: normal;
+    padding-top: 25px;
+    margin: 40px 0;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #e5ff00;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;  
+}
+.container .thumbnails .content{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    overflow: hidden;    
+}
+.container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.thumbnails {
+    align-items: center;
+}
+.thumbnails img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #8a9b41;
+}
+.thumb-text{
+    font-family:Helvetica;
+    font-size: small;
+}
+.content{
+    border: 5px solid #8a8a8a;
+}
+.container .thumbnails:hover:before{
+    top: 0;
+    right: calc(100% - 5px);
+    z-index: 10;
+}
+.container .thumbnails .thumb-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    transition: all 0.5s ease-in-out;	
+}
+.container .thumbnails:hover .thumb-text{
+    top: 0;
+    right: 0;
+}
+.image{
+    align-content: center;
+}
+#largeImage {
+    float: left;
+    max-height: 500px;
+      max-width: 100%;
+      border: 3px solid #ccc;
+    margin-left: 150px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+#ingredients {
+    background-color: rgba(163, 163, 163, 0.796);
+    width: 38%;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 900px;
+    margin-right: 70px;
+}	
+#steps{
+    background-color: rgb(163, 163, 163);
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    padding: auto;
+}

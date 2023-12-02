@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; 
+   border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: #7c7373;
+   background-image: url(rushdiBack.jpg);
+}
+
+/* adjusting width margin and padding of overall images within thier borders */
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+    padding:3rem 2rem;
+ }
+ 
+ /* adjusting products in a grid */
+ .container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;  /*gat between items is 2rem*/
+ }
+
+/* Adding to each product  seperated box*/
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #000000c0;
+   outline-offset: -1.5rem;
+   cursor: pointer;  /* when hovering over products cursor becomes a pointer*/
+   border-radius: 10px;
+}
+
+/* when hovering over products outline appears */
+.container .products-container .product:hover{
+   outline: .5rem solid #ffff00;
+   outline-offset: 0;
+}
+
+ /* adjusting images withing the product border */
+.container .products-container .product img{
+    height: 30rem;
+    border-radius: 10px;
+ }
+
+ /* when hoveing image size lowers */
+.container .products-container .product:hover img{
+    transform: scale(1.2);
+ }
+
+ /* changing contacts name size, color */
+.container .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#ffffff;
+ }
+
+ /* product description popup details adjusting */
+.products-preview{ 
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+/* details description inner window details adjusting */
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #ffffff;  /* inner window background color */
+   position: relative;
+   border-radius: 20px;
+   margin:2rem; /* inner window margin */
+   width:40rem  /* inner window width */
+}
+
+
+
+
+/* description popup veiw activating */
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+/* description veiw close button designings */
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; 
+   right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+
+/* when over close button it rotates 45degrees */
+.products-preview .preview .fa-times:hover{
+   transform: rotate(45deg);
+}
+
+/* description popup view product name changes */
+.products-preview .preview h3{
+   color:#000000;
+   padding:5rem 0;
+   font-size: 2.5rem;
+}
+
+/* description popup view paragraph */
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#000000;
+}
+
+/* description popup view details button */
+.products-preview .preview .details{
+   margin: auto;
+   display: flex;
+   padding: 1rem;
+   font-size: 1.6rem;
+   width: 36rem; /* width of the cart box */
+   height: 4rem;
+   color:#000000;
+   background: #eeff02;  /* box color */
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+/* popup view details text centering */
+.products-preview .preview .details a{
+   flex:1rem;
+   color: #000000;
+}

@@ -1,0 +1,136 @@
+/*Student 2 Lafri*/
+*{ /* Select all element in the HTML page*/
+
+    margin:0; /*the space around the element border*/
+    padding: 0; /*the space between an element border and the element content*/
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.naviSection {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.naviBar {
+    overflow: hidden;
+    background-color: #000000c1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    width: 1200px;
+    top: 0;
+    position: fixed;
+    z-index:1;
+}
+
+.naviBar img {
+    padding: 0 20px;
+    background-color: #00000077;
+
+}
+
+/*Add a background colour to the navigation*/
+.navi{
+    overflow: hidden; /* overflow hidden helps the content fit into an area and the rest of the content is hidden */
+    background-color: #00000071;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    
+
+}
+
+/*Editing the text*/
+.navi a{
+    float: left ; /* used for positioning the nav bar*/
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px; /*To create a space arround the content (top and rigt)*/
+    font-size: 21px;
+    text-decoration: none;/*To remove the underline */
+    
+}
+
+/*changes the colour when mouse pointer on the text*/
+.navi a:hover{
+    background-color: #000000;
+    color: #dee123;
+    transform: scale(0.90); /*Creates an animation*/
+}
+
+/*changes colour when the text selected */
+.navi a.active{
+    background-color: #dee123;
+    color:#000000b7 ;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000c1;
+    margin: auto;
+    color: #dee123;
+    position: fixed;
+    width: 1200px;
+    height: 8vh; /* 'vh' viewable screen’s height. 'vw'viewable screen’s width.*/
+    top: 92vh;
+    left: calc(50vw - 600px);/*As wide as the element is, minus 20 pixels*/
+    /*Reference: https://css-tricks.com/a-complete-guide-to-calc-in-css/*/
+    bottom: 0;
+    padding-right: 120px;
+    padding-left: 120px;
+    overflow: hidden;/*rest of the content will be invisible*/
+}
+
+.footer1 {
+    padding-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer2 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer2  > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer2  > a:hover {
+    padding: 5px;
+    background-color: #a9ac12;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.topPage {
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    background-color: #dee1238f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+.topPage > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.topPage:hover{
+    background-color: #e12323;
+    color:#f8f8f8 ;
+    transform: scale(1.1);
+}

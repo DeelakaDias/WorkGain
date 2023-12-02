@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<!--Student 3 Deelaka-->
+<head>
+    <title>Store</title>
+    <!-- adding icon to title -->
+    <link rel = "icon" href = "Sitelogotitle1.jpg" type = "x-icon">
+    <!--internal css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- group bar css -->
+    <link rel="stylesheet" href="SiteStyle.css">
+    <!--css file link-->
+    <link rel="stylesheet" href="productstyle.css">
+    <!--java file link-->
+    <script src="products.js" defer></script>
+    <!-- cart button link -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+            
+        <!--Navigation Bar-->
+        <div class="naviSection"> <!-- <div> defines a division or a section-->
+            <div class="naviBar"> <!--'class' is used to point to a class name in a style sheet-->
+                <img src="SiteLogo.png" alt="logo" height="55"> <!-- images taken from : https://www.wallpaperflare.com/search?wallpaper=men+fitness-->
+                <div class="navi">
+
+                    <a href="HomePage.html">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a class="active" href="ProductsPage.html">Store</a>
+                    <a href="QuizPage.html">Quiz</a>
+                    <a href="NewsLetterSignup.html">NewsLetter</a>
+                    <a href="GalleryPage.html">Gallery</a>
+                    <a href="MyListPage.html">My List </a>
+                    <a href="FavouritePage.html">Favourite Page </a>
+
+                    
+                
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <br><br><br><br>
+    
+
+    <video autoplay muted loop plays-inline class = "back-video">
+        <source src="threadmil.mp4" type="video/mp4">
+      </video>
+
+    <div class="logo">
+        <div class="cart-btn" onclick="viewCartFunction()">
+            <i class="bi bi-cart4"></i>
+            <div class="cartAmount" id="cart_amount"></div>
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+
+        <div class="products-container">
+
+            <div class="product" data-name="p-1">
+                <img src="adjustable bench.jpeg" height="200" width="240">
+                <h3>Adjustable Bench</h3>
+                <div class="price">$85.69</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="Aerobic step platform.png" height="200" width="240">
+                <h3>Aerobic Step Platform</h3>
+                <div class="price">$23.94</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="air bike.jpg" height="200" width="240">
+                <h3>Air Bike</h3>
+                <div class="price">$1,126.12</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="body weight scale.jpg" height="40" width="200">
+                <h3>Body Weight Scale</h3>
+                <div class="price">$42.26</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="Flat bench.jpg" height="200" width="240">
+                <h3>Flat Bench</h3>
+                <div class="price">$81.45</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="gym gloves.jpg" height="100" width="180">
+                <h3>Gym Gloves</h3>
+                <div class="price">$26.76</div>
+            </div>
+
+            <div class="product" data-name="p-7">
+                <img src="Kettlebell.jpg" height="100" width="130">
+                <h3>Kettlebell - Adjustable</h3>
+                <div class="price">$196.34</div>
+            </div>
+
+            <div class="product" data-name="p-8">
+                <img src="medicine ball.jpg" height="100" width="160">
+                <h3>Medicine Ball</h3>
+                <div class="price">$35.99</div>
+            </div>
+
+            <div class="product" data-name="p-9">
+                <img src="punching bag.jpg" height="200" width="240">
+                <h3>Punching Bag</h3>
+                <div class="price">$30.99</div>
+            </div>
+
+            <div class="product" data-name="p-10">
+                <img src="Roller.jpg" height="100" width="160">
+                <h3>AB Roller</h3>
+                <div class="price">$12.99</div>
+            </div>
+
+            <div class="product" data-name="p-11">
+                <img src="skipping rope.jpg" height="200" width="240">
+                <h3>Skipping Rope</h3>
+                <div class="price">$12.99</div>
+            </div>
+
+            <div class="product" data-name="p-12">
+                <img src="spin bike.jpg" height="200" width="240">
+                <h3>Spin Bike</h3>
+                <div class="price">$633.99</div>
+            </div>
+
+            <div class="product" data-name="p-13">
+                <img src="vibration plate exercise machine.jpg" height="200" width="240">
+                <h3>Vibration Plate Exercise Machine</h3>
+                <div class="price">$203.99</div>
+            </div>
+
+            <div class="product" data-name="p-14">
+                <img src="thick yoga mat.jpg" height="200" width="240">
+                <h3>Thick Yoga Mat</h3>
+                <div class="price">$11.05</div>
+            </div>
+
+            <div class="product" data-name="p-15">
+                <img src="threadmill.jpg" height="200" width="240">
+                <h3>Threamill</h3>
+                <div class="price">$1,478.92</div>
+            </div>
+
+            <div class="product" data-name="p-16">
+                <img src="resistance band.jpg" height="200" width="240">
+                <h3>Resistance Band</h3>
+                <div class="price">$19.99</div>
+            </div>
+
+            <div class="product" data-name="p-17">
+                <img src="Biosteel.jpg" height="200" width="240">
+                <h3>Biosteel Energy Drink</h3>
+                <div class="price">$29.99 </div>
+            </div>
+
+            <div class="product" data-name="p-18">
+                <img src="Muscle Milk.jpg" height="200" width="240">
+                <h3>Muscle Milk Protein Supplement</h3>
+                <div class="price">$26.99</div>
+            </div>
+
+            <div class="product" data-name="p-19">
+                <img src="nitro tech.jpeg" height="200" width="240">
+                <h3>Nitro Tech Protein Supplement</h3>
+                <div class="price">$34.99</div>
+            </div>
+
+            <div class="product" data-name="p-20">
+                <img src="she whey.png" height="100" width="160">
+                <h3>She Whey Supplement</h3>
+                <div class="price">$38.99</div>
+            </div>
+
+        </div>
+
+    </div>
+
+ <div class="products-preview">
+
+
+        <div class="preview" data-target="p-1">
+        
+            <i class="fas fa-times"></i>
+            <h3>Adjustable Bench</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+
+                <div class="fontButton1">
+                    <button id="increase-btn1">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn1">Font -</button>
+                </div>
+
+            </div>
+
+                <p id="text1">An adjustable bench is a type of exercise bench that can be adjusted to different angles and positions to
+                    allow for a variety of
+                    exercises targeting different muscle groups.
+                    It typically consists of a padded seat and backrest,
+                    with adjustable supports or braces to hold weights or provide support during exercise.</p>
+        
+            <div class="price">$85.69</div>
+            <div class="cart"
+                onclick="addToCartFunction(2, 'Adjustable Bench',85.69,'adjustable bench.jpeg')">
+                <a>Add to Cart</a>
+            </div>
+            
+    </div>
+
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <h3>Aerobic Step Platform</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+
+                <div class="fontButton1">
+                    <button id="increase-btn2">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn2">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text2">This is a portable fitness tool designed for low-impact cardiovascular exercise, strength training, and
+                balance improvement.
+                Users can perform a variety of exercises, such as step-ups,
+                lunges, squats, and jumps, on the platform, and modify the intensity by adjusting the height or adding
+                weights.</p>
+
+            <div class="price">$23.94</div>
+            <div class="cart"
+                onclick="addToCartFunction(3, 'Aerobic Step Platform',23.94,'Aerobic step platform.png')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <h3>Air Bike</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+
+                <div class="fontButton1">
+                    <button id="increase-btn3">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn3">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text3">This creates a high-intensity, full-body workout that can help improve cardiovascular fitness, burn
+                calories,
+                and build muscle in the legs, arms, and core.
+                Air bikes are often used in high-intensity interval training (HIIT) workouts and are popular among
+                athletes and
+                fitness enthusiasts. So why waiting</p>
+            <div class="price">$1,126.12</div>
+            <div class="cart"
+                onclick="addToCartFunction(4, 'Air Bike',1126.12,'air bike.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <h3>Body Weight Scale</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+
+                <div class="fontButton1">
+                    <button id="increase-btn4">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn4">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text4">Designed to help you track your weight and achieve your health goals with ease! With its sleek and modern
+                design.
+                It features high-precision sensors that provide accurate weight measurements, and a large, easy-to-read
+                LCD display.
+                So why wait? Start your journey to a healthier you today with our body weight scale!</p>
+            <div class="price">$42.26</div>
+            <div class="cart"
+                onclick="addToCartFunction(5, 'Body Weight Scale',42.26,'body weight scale.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <h3>Flat Bench</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+            
+                <div class="fontButton1">
+                    <button id="increase-btn5">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn5">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text5">Designed with durable materials and a sleek, modern look,
+                our Flat Bench is perfect for a variety of exercises including bench press, dumbbell flys, and more.
+                Compact and easy to store, the Flat Bench is a must-have for any fitness enthusiast.
+                Order yours today and take your workouts to the next level!</p>
+            <div class="price">$81.45</div>
+            <div class="cart"
+                onclick="addToCartFunction(6, 'Flat Bench',81.45,'Flat bench.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <h3>Gym Gloves</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+            
+                <div class="fontButton1">
+                    <button id="increase-btn6">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn6">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text6">
+                Made with high-quality materials and advanced design features,
+                gym gloves offer excellent grip and control during weightlifting, bodybuilding, and other strength
+                training activities.
+                Enhance your performance and achieve your fitness goals with comfort and confidence.</p>
+            <div class="price">$26.76</div>
+            <div class="cart"
+                onclick="addToCartFunction(7, 'Gym Gloves',26.76,'gym gloves.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times"></i>
+            <h3>Kettlebell - Adjustable</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+            
+                <div class="fontButton1">
+                    <button id="increase-btn7">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn7">Font -</button>
+                </div>
+
+            </div>
+            
+            <p id="text7">Looking for a versatile and range of weights supercharge your workouts?
+                Look no further than the kettlebell! With its unique design and multiple grip options,
+                this compact weight can help you build strength, improve balance, and burn calories all at once.</p>
+            <div class="price">$196.34</div>
+            <div class="cart"
+                onclick="addToCartFunction(8, 'Kettlebell Adjustable',196.34,'Kettlebell.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-8">
+            <i class="fas fa-times"></i>
+            <h3>Medicine Ball</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+         
+                <div class="fontButton1">
+                    <button id="increase-btn8">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn8">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text8">A medicine ball is a versatile fitness tool that can help improve strength, coordination, and balance.
+                Made of durable materials such as rubber or leather, it is designed for throwing, catching, and
+                slamming exercises that engage your core muscles and upper body.</p>
+            <div class="price">$35.99</div>
+            <div class="cart"
+                    onclick="addToCartFunction(9, 'Medicine Ball',35.99,'medicine ball.jpg')">
+                    <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <h3>Punching Bag</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn9">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn9">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text9">A punching bag is an essential tool for any aspiring fighter or fitness enthusiast looking to improve
+                their strength,
+                endurance, and technique. Made of high-quality materials.
+                With regular use, you can improve your cardiovascular health, build muscle,
+                and relieve stress while honing your fighting skills</p>
+            <div class="price">$30.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(10, 'Punching Bag',30.99,'punching bag.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-10">
+            <i class="fas fa-times"></i>
+            <h3>AB Roller</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn10">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn10">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text10">An AB roller is a simple and effective fitness tool designed to help you strengthen your core muscles,
+                including your abs, obliques, and lower back.
+                Whether you're a fitness enthusiast or just starting out,
+                an AB roller is an excellent addition to any home gym.</p>
+            <div class="price">$12.99</div>
+            <div class="cart"
+                    onclick="addToCartFunction(11, 'AB Roller',12.99,'Roller.jpg')">
+                    <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-11">
+            <i class="fas fa-times"></i>
+            <h3>Skipping Rope</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn11">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn11">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text11">For high-intensity cardio workouts that can help you burn calories,
+                improve your endurance,
+                and build coordination.
+                Whether you're looking to get in shape or just want to add a fun and challenging element to your workout
+                routine,
+                a skipping rope is an excellent choice.</p>
+            <div class="price">$12.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(12, 'Skipping Rope',12.99,'skipping rope.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-12">
+            <i class="fas fa-times"></i>
+            <h3>Spin Bike</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+           
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn12">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn12">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text12">This is a high-performance indoor cycling machine designed to provide a challenging and effective
+                workout.
+                With its compact size and sleek design,
+                a spin bike is perfect for users of all fitness levels who want to improve their cardiovascular health,
+                burn calories,
+                and build endurance. Whether you're a beginner or an advanced athlete, a spin bike is an excellent
+                addition to any home gym.</p>
+            <div class="price">$633.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(13, 'Spin Bike',633.99,'spin bike.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-13">
+            <i class="fas fa-times"></i>
+            <h3>Vibration Plate Exercise Machine</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+      
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn13">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn13">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text13">Powerful fitness tool designed to help you get a full-body workout in less time.
+                Whether you're looking to add variety to your workout routine or want to achieve your fitness goals more
+                efficiently,
+                a vibration plate exercise machine is an excellent choice. So step on, feel the vibrations!</p>
+            <div class="price">$203.99</div>
+            <div class="cart"
+                    onclick="addToCartFunction(14, 'Vibration Plate Exercise Machine',203.99,'vibration plate exercise machine.jpg')">
+                    <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-14">
+            <i class="fas fa-times"></i>
+            <h3>Thick Yoga Mat</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn14">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn14">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text14">Comfortable and supportive fitness accessory designed to help you deepen your yoga practice.
+                Made of high-density foam and natural rubber,
+                it provides a cushioned surface that is easy on your joints and offers excellent grip and traction.
+                With its extra thickness, it is perfect for users who require additional padding and support during
+                their yoga sessions.
+            </p>
+            <div class="price">$11.05</div>
+            <div class="cart"
+                onclick="addToCartFunction(15, 'Thick Yoga Mat',11.05,'thick yoga mat.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-15">
+            <i class="fas fa-times"></i>
+            <h3>Threamill</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn15">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn15">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text15">Versatile and effective fitness machine designed to help you burn calories,
+                improve cardiovascular health, and build endurance.
+                Whether you're looking to lose weight, stay in shape, or train for a marathon, a treadmill is an
+                excellent choice. </p>
+            <div class="price">$1,478.92</div>
+            <div class="cart"
+                onclick="addToCartFunction(16, 'Threamill',1478.92,'threadmill.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-16">
+            <i class="fas fa-times"></i>
+            <h3>Resistance Band</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>>
+            </div>
+        
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn16">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn16">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text16">Portable fitness tool designed to help you tone and strengthen your muscles. Made of durable latex or
+                fabric,
+                it provides resistance that can be used for a wide range of exercises, including squats, lunges, and
+                bicep curls.
+                Users who want to workout on-the-go or at home without the need for heavy equipment.</p>
+            <div class="price">$19.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(17, 'Resistance Band', 19.99,'resistance band.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-17">
+            <i class="fas fa-times"></i>
+            <h3>Biosteel Energy Drink</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn17">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn17">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text17">BioSteel Energy Supplement is a high-performance sports drink designed to help you optimize your athletic
+                performance and recovery.
+                Made with natural ingredients and free of artificial colors, flavors, and preservatives, it provides
+                clean energy, electrolytes,
+                and amino acids to support your body's needs during exercise.</p>
+            <div class="price">$29.99</div>
+            <div class="cart"
+                    onclick="addToCartFunction(18, 'Biosteel Energy Drink',29.99,'Biosteel.jpg')">
+                    <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-18">
+            <i class="fas fa-times"></i>
+            <h3>Muscle Milk Protein Supplement</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn18">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn18">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text18"> Powerful sports nutrition product designed to help you boost your energy and enhance your
+                performance. With its blend of high-quality protein, essential amino acids,
+                and complex carbohydrates, it provides sustained energy,
+                promotes muscle recovery, and supports muscle growth.
+            </p>
+            <div class="price">$26.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(19, 'Muscle Milk Protein Supplement',26.99,'Muscle Milk.jpg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-19">
+            <i class="fas fa-times"></i>
+            <h3>Nitro Tech Protein Supplement</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn19">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn19">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text19">World Class premium sports nutrition product designed to help you build muscle and improve athletic
+                performance.
+                With its advanced formula that combines high-quality whey protein isolate and amino acids,
+                it provides superior muscle building support, enhances strength, and speeds up recovery.</p>
+            <div class="price">$34.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(20, 'Nitro Tech Protein Supplement',34.99,'nitro tech.jpeg')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+
+        <div class="preview" data-target="p-20">
+            <i class="fas fa-times"></i>
+            <h3>She Whey Women Supplement</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+   
+            <div class="all">
+        
+                <div class="fontButton1">
+                    <button id="increase-btn20">Font +</button>
+                </div>
+
+                <div class="fontButton2">
+                    <button id="decrease-btn20">Font -</button>
+                </div>
+
+            </div>
+
+            <p id="text20">High-quality sports nutrition product designed specifically for women who want to build lean muscle,
+                improve their fitness. Made with whey protein isolate, BCAAs, and digestive enzymes.Reduce bloating and
+                discomfort.</p>
+            <div class="price">$38.99</div>
+            <div class="cart"
+                onclick="addToCartFunction(21, 'She Whey Women Supplement',38.99,'she whey.png')">
+                <a>Add to Cart</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The cart Priview modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-times"></i></span>
+            <h2 class="view-cart-title">View Cart</h2>
+            <div class="cart_content">
+                <div>
+                    <table width="100%" id="cart-details-table-header">
+                        <tr width="100%" class="header-cart">
+
+                            <th width="40%" id="product_name_header">product Name</th>
+                            <th width="15%" id="product_price_header"> Price($)</th>
+                            <th width="20%" id="product_qty_header">Quantity</th>
+                            <th width="15%" id="price_amount_header"> Amount($)</th>
+                            <th width="10%" id="remove"></th>
+
+                        </tr>
+                        <tr class="detail-cart">
+                        </tr>
+                    </table>
+                    <table width="100%" class="net_total_table">
+                        <tr>
+                            <td id="net_total_header">Sub Total</td>
+                            <td id="net_total"></td>
+                        </tr>
+                    </table>
+
+                    <div class="proceed-btn">
+
+                        <a id="proceed-btn-Notdisabled" onclick="checkout()">Proceed to Checkout </a>
+
+                        <a id="proceed-btn-disabled" href="ProductsPage.html">Continue Shopping </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- loader -->
+            <div id="loaderScreen">
+                <div id="load" class="loader"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="topPage" id="up"> <!--'id' is to a specific style declaration in a style sheet-->
+        <a href="#top">&and;</a> <!--characters displayed in HTML-->
+    </div>
+
+    <br> <!--The <br> tag defines a line break-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer">
+        <div class="footer1">
+            Copyright &copy; 2023 WORKGAIN (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="footer2">
+            Developed by <a href="../HTML/Student3EditorPage.html">Deelaka Dias</a>
+        </div>
+    </footer>
+</body>
+
+</html>

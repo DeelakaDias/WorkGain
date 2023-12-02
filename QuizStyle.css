@@ -1,0 +1,255 @@
+/*Student 2 Lafri*/
+*{ /* Select all element in the HTML page*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#000000;
+    color: #c2c6c2;
+    align-items: center;
+    font-family: Verdana;
+}
+
+.x{
+    width: 80%;
+    height: 600px;
+    margin :auto;
+    background-color: #00000000;
+    color: #c2c6c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 260px;
+    padding-left: 120px;
+    font-family: Verdana;
+}
+
+.y{
+    width: 80%;
+    height: 900px;
+    background-color: #00000000;
+    color: #c2c6c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 260px;
+    font-family: Verdana;
+}
+
+.rulesButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* helps to transform the element(rotate,move ect ) */
+}
+
+.rulesButton button{
+    font-size: 25px;
+    background:#e2d522;
+    color:#010000;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+    border:1px solid  #000000;
+}
+
+.rulesButton a{
+    float: left ; /* used for positioning the nav bar*/
+    color: #010000;
+    text-align: center;
+    padding: 14px 16px; /*To create a space arround the content (top and rigt)*/
+    font-size: 21px;
+    text-decoration: none;/*To remove the underline */
+    font-family: Verdana;
+    font-size: 25px;
+    background:#e2d522;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+    border:1px solid  #000000;
+}
+
+.rulesButton a:hover{
+    background:#E73725;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.rulesButton button:hover{
+    background:#E73725;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.infobox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 540px;
+	max-width:600px;
+	background: #000000;
+	padding:10px;
+    border-radius:20px; /*To Create curved border*/
+	width:100%;
+    height: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%) scale(1); /* helps to transform the element(rotate,move ect ) */
+}
+
+.infobox.activeInfo{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50) scale(0,9); /* helps to transform the element(rotate,move ect ) */
+}
+
+.Rules.activeInfo{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50) scale(0,9); /* helps to transform the element(rotate,move ect ) */
+}
+
+.infobox .infotitle{
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #a8a8a8;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    font-size: 35px;
+    font-weight: 600;
+
+
+}
+
+.infobox .infolist .info{
+    margin: 8px;
+    font-size: 20px;
+
+}
+
+.infobox .infolist .info span{
+    font-weight: 600;
+
+
+}
+
+.infobox button{
+    font-size: 15px;
+    background:#e2d522;
+    color:#000000;
+    border:2px solid  #E73725;
+    cursor:pointer;   
+    padding: 5px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 400px;
+    
+
+}
+
+.infobox button.restart:hover{                           
+    background:#55e725;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.infobox button.exit:hover{                           
+    background:#e74925;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.buttons{
+    height: 60px;
+    width: 100%;
+    border-top: 2px solid #010000;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.answeSubmit{
+    position: absolute;
+    left: 400px;
+    transform: translate(-50%,-50%); /* helps to transform the element(rotate,move ect ) */
+}
+
+.answeSubmit .quizAnswer{
+    font-size: 25px;
+    background:#010000;
+    color:#cecb13;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+}
+
+.answeSubmit .quizAnswer:hover{
+    background:#cecb13;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.backToHome {
+    float: left ; /* used for positioning the nav bar*/
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px; /*To create a space arround the content (top and rigt)*/
+    font-size: 21px;
+    text-decoration: none;/*To remove the underline */
+    font-family: Verdana;
+    font-size: 25px;
+    background:#cecb13;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+}
+
+.backToHome:hover{
+    background:#e74925;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.timer{
+    margin-top: 100px;
+    margin-left:300px ;
+    font-size: 30px;
+    color:#bdbdbd;
+    transform: scale(1.1);
+}
+
+#time{
+    color:#fff708;
+    font-family: fantasy;
+    font-weight: bold;
+}

@@ -1,0 +1,125 @@
+/*Student 1 Pramuditha*/
+body {
+    background-image: url('../img/HomeBackground.jpg');
+    background-color:#c2c6c2;
+    font-family: Verdana;
+}
+    
+.x{
+    width: 80%;
+    height: 900px;
+    margin :auto;
+    background-color: #00000000;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 260px;
+    padding-left: 120px;
+    
+}
+.container{
+    max-width:700px;
+    width:100%;
+    background:#fff;
+    padding:25px ;
+    border-radius:5px;
+    
+}
+.container .title{
+    font-family:Helvetica;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 20px 0 10px ;
+}
+form .user-details .input-box{
+    margin: 10px 0 10px ;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box input{
+    height:45px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    border-width:2px;
+    padding-left:15px;
+    font-size:15px;
+    border-bottom-width:2px;
+}
+label{
+    font-family:Helvetica;
+    font-weight:550;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+form .gender-details .gender-title{
+    font-family:Helvetica;
+    font-size: 18px;
+    font-weight: 550;
+}
+form .gender-details .category{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top:15px;
+}
+form .gender-details .category .male{
+    margin-right:20px;
+}
+form .button{
+    height:45px;
+    margin: 30px;
+}
+form .button button{
+    height: 100%;
+    width:100%;
+    outline: none;
+    color:#fff;
+    border: none;
+    font-family:Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    letter-spacing:2px;
+    background:linear-gradient(150deg,#1a1a00,#e6e600);
+}
+form .button button:hover{
+    background:linear-gradient(-150deg,#1a1a00,#e6e600);
+}
+@media (max-width: 584px){
+    .container{
+        max-width:100%;
+    }
+    form .user-details .input-box{
+    margin-bottom:15px;
+    width:100%;
+    }
+}
+.input-box input:focus{
+    outline: 0;
+}
+.input-box.error input {
+    border-color: #ff0000;
+}
+.input-box.success input {
+    border-color: #00e040;
+}
+.input-box small{
+    font-family: "Verdana";
+    font-size: 14px;
+    color: #ff0000;
+    visibility: hidden;
+}
+.input-box.error small{
+    font-family: "Verdana";
+    font-size: 14px;
+    color: #ff0000;
+    visibility: visible;
+}
+

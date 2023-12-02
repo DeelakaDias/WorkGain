@@ -1,0 +1,180 @@
+/*Student 2 Lafri*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body {
+    background-image: url('HomeBackground.jpg');
+    background-color:#c2c6c2;
+}
+    
+.x{
+    width: 80%;
+    height: 2000px;
+    margin :auto;
+    background-color: #00000000;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 260px;
+    padding-left: 120px;
+    font-family: Verdana;
+}
+
+.feedbackButton{
+    position: absolute;
+    top: 1900px;
+    left: 50%;
+    transform: translate(-50%,-50%); /* helps to transform the element(rotate,move ect ) */
+}
+
+.feedbackButton button{
+    font-size: 25px;
+    background:#e2d522;
+    color:#010000;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+    border:1px solid  #000000;
+}
+
+.feedbackButton a{
+    float: left ; /* used for positioning the nav bar*/
+    color: #010000;
+    text-align: center;
+    padding: 14px 16px; /*To create a space arround the content (top and rigt)*/
+    font-size: 21px;
+    text-decoration: none;/*To remove the underline */
+    font-family: Verdana;
+    font-size: 25px;
+    background:#e2d522;
+    border:10px;
+    cursor:pointer;   
+    padding:10px;
+    border-radius:10px; /*To Create curved border*/
+    text-align:center;
+    border:1px solid  #000000;
+}
+
+.feedbackButton a:hover{
+    background:#E73725;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.feedbackButton button:hover{
+    background:#E73725;
+    border:1px solid  #000000;
+    color:#000000;
+    transition:0.5s;
+    transform: scale(1.1);
+}
+
+.container{
+    left: 10%;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    width: 1200px;
+    height: 1675px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: auto;
+    background-color: #2a2a2a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+.imageBox1{
+    position: relative;
+    height: 400px;
+    width: 1200px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.imageBox2{
+    position: relative;
+    height: 800px;
+    width: 554px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.imageBox3{
+    position: relative;
+    height: 800px;
+    width: 554px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.imageBox4{
+    position: relative;
+    height: 400px;
+    width: 1200px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageBox1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imageBox2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imageBox3 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imageBox4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imageBox1:hover img{
+    transform: scale(1.05);
+}
+
+.imageBox2:hover img{
+    transform: scale(1.05);
+}
+
+.imageBox3:hover img{
+    transform: scale(1.05);
+}
+
+.imageBox4:hover img{
+    transform: scale(1.05);
+}
