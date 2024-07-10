@@ -4,117 +4,33 @@
 <head>
   <title>Welcome</title>
   <link rel="icon" href="Sitelogotitle1.jpg" type="x-icon">
+  <link rel="stylesheet" href="index.css">
   <script>
     setTimeout(function () {
       window.location.href = "HomePage.html";
     }, 6000); // 5000 milliseconds = 5 seconds
-  </script>
-  <style>
-    body {
-      background-color: black;
-    }
-
-    .bg-video {
-      opacity: 30%;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
-
-    @media (min-aspect-ratio: 16/9) {
-      .bg-video {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    @media (max-aspect-ratio: 16/9) {
-      .bg-video {
-        width: auto;
-        height: 100%;
-      }
-    }
-
-    .content {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 20%;
-      transform: translate(-15%, -50%);
-    }
-
-    .content h1 {
-      font-size: 135px;
-      font-family: Helvetica;
-      padding-top: 10px;
-      padding-right: 10px;
-      padding-bottom: 20px;
-      padding-left: 10px;
-      font-weight: 550;
-      animation: animate 3s ease infinite;
-    }
-
-    @keyframes animate {
-      0% {
-        -webkit-text-stroke: 3px #f6ff00;
-        color: transparent;
-      }
-
-      35% {
-        -webkit-text-stroke: 0px;
-        color: #c6cd00;
-      }
-
-      65% {
-        -webkit-text-stroke: 0px;
-        color: #c6cd00;
-      }
-
-      100% {
-        -webkit-text-stroke: 3px #f6ff00;
-        color: transparent;
-      }
-    }
-
-    .content p {
-      font-family: "Helvetica";
-      font-weight: 500;
-      font-size: 30px;
-      color: rgb(234, 255, 0);
-    }
-
-    nav ul li {
-      list-style: none;
-      display: inline-block;
-      color: rgb(234, 255, 0);
-      font-family: Helvetica;
-      font-size: 20px;
-      padding-right: 15px;
-    }
-  </style>
+    </script>
 </head>
 
 <body>
   <video autoplay loop muted plays-inline class="bg-video">
     <source src="PresentationVideo.mp4" type="video/mp4">
   </video>
-  <div class="content">
-    <h1>WORKGAINS</h1>
-    <p>Presented by :</p>
-    <nav>
-      <ul>
-        <li>Pramuditha Vishwajith (Student 1)</li>
-        <li>|</li>
-        <li>Lafri Suhood (Student 2)</li>
-        <li>|</li>
-        <li>Deelaka Dias (Student 3)</li>
-        <li>|</li>
-        <li>Rushdi Mohideen (Student 4)</li>
-      </ul>
-    </nav>
-
-  </div>
+    <div class="content">
+      <h1>WORKGAINS</h1>
+      <p>Project by :</p>
+      <nav>
+        <ul>
+          <li>Pramuditha Vishwajith</li>
+          <li>|</li>
+          <li>Lafri Suhood</li>
+          <li>|</li>
+          <li>Deelaka Dias</li>
+          <li>|</li>
+          <li>Rushdi Mohideen</li>
+        </ul>
+      </nav>
+    </div>
 </body>
 
 </html>
